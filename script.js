@@ -1,9 +1,3 @@
-// Mobile navigation menu toggle function
-const menuBtn = document.getElementById('menuBtn');
-const navLinks = document.getElementById('navLinks');
-const navItems = document.querySelectorAll('.nav-item');
-const backToTopBtn = document.getElementById('backToTop');
-
 // YouTube Pop-up elements selection
 const youtubeModal = document.getElementById('youtubeModal');
 const closeModalBtn = document.getElementById('closeModalBtn');
@@ -45,12 +39,18 @@ if (youtubeModal) {
     });
 }
 
-// Navigation hamburger menu control
+// Mobile navigation menu toggle function
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
+const navItems = document.querySelectorAll('.nav-item');
+const backToTopBtn = document.getElementById('backToTop');
+
 menuBtn.addEventListener('click', () => {
     menuBtn.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
 
+// Navigation menu elements click parameters
 navItems.forEach(item => {
     item.addEventListener('click', () => {
         menuBtn.classList.remove('active');
