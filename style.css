@@ -368,7 +368,7 @@ h1, h2, h3 {
 }
 
 /* =========================================
-   PRICING PACKAGES SECTION STYLING (Newly Added)
+   PRICING PACKAGES SECTION STYLING
    ========================================= */
 .pricing-grid {
     display: grid;
@@ -1072,5 +1072,24 @@ h1, h2, h3 {
     }
     .menu-btn.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Mobile view par buttons ko neat aur fit karne ke liye */
+@media (max-width: 576px) {
+    .hero-buttons {
+        flex-direction: column; /* Buttons ko ek ke niche ek stack karega */
+        align-items: center;
+        width: 100%;
+        gap: 12px; /* Buttons ke darmiyan munasib gap */
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px; /* Buttons ki width ko barabar aur sleek rakhega */
+        text-align: center;
+        padding: 12px 24px; /* Balanced mobile padding */
+        font-size: 0.9rem;
+        white-space: nowrap; /* Text ko wrap hone se roke ga */
     }
 }
