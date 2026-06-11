@@ -3,7 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad | Portfolio</title>
+    <title>Muhammad | Full Stack Web Developer Portfolio</title>
+    
+    <!-- Basic SEO Meta Tags -->
+    <meta name="description" content="Muhammad – Full Stack Web Developer in Jhang, Pakistan. Specializing in PHP, MySQL, and responsive Bootstrap websites.">
+    <meta name="keywords" content="web developer pakistan, freelance developer jhang, PHP developer, portfolio, full stack developer jhang, web design pakistan, M_313Tech, custom web applications">
+    <meta name="author" content="Muhammad">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview Meta Tags -->
+    <meta property="og:title" content="Muhammad | Full Stack Web Developer Portfolio">
+    <meta property="og:description" content="Full Stack Web Developer based in Jhang, Pakistan. Custom PHP, MySQL backend, and responsive Bootstrap layouts.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://muhammad313-dev.github.io/Personal-Portfolio-/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad | Web Developer Portfolio">
+    <meta name="twitter:description" content="Custom dynamic web development and responsive UI designs by Muhammad.">
+    <meta name="twitter:image" content="profile.jpg">
+
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome Icons -->
@@ -15,7 +35,7 @@
 </head>
 <body>
 
-    <!-- YouTube Channel Pop-up Modal (Triggers immediately on load) -->
+    <!-- YouTube Channel Pop-up Modal (Triggers automatically on load) -->
     <div id="youtubeModal" class="modal-overlay">
         <div class="modal-card">
             <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Pop-up">
@@ -42,6 +62,7 @@
                 <a href="#about" class="nav-item">About</a>
                 <a href="#education" class="nav-item">Education</a>
                 <a href="#services" class="nav-item">Services</a>
+                <a href="#pricing" class="nav-item">Pricing</a>
                 <a href="#skills" class="nav-item">Skills</a>
                 <a href="#experience" class="nav-item">Experience</a>
                 <a href="#projects" class="nav-item">Projects</a>
@@ -66,7 +87,8 @@
                 <p>I build clean, professional, and scalable web solutions, helping clients transform ideas into production-ready platforms. Aspiring to lead my own software enterprise.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <!-- Download CV Button -->
+                    <a href="Muhammad_CV.pdf" download class="btn btn-secondary"><i class="fa-solid fa-download" style="margin-right: 8px;"></i>Download CV</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -147,6 +169,92 @@
         </div>
     </section>
 
+    <!-- Pricing Section (Newly Integrated) -->
+    <section id="pricing" class="pricing-section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Freelance Packages</h2>
+            <div class="pricing-grid">
+                
+                <!-- Package 1: Basic -->
+                <div class="pricing-card">
+                    <div class="package-header">
+                        <h3>Basic Plan</h3>
+                        <p class="package-subtitle">Single Page Design</p>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">$40</span>
+                            <span class="starting">Starting Price</span>
+                        </div>
+                    </div>
+                    <div class="package-meta">
+                        <span><i class="fa-regular fa-clock"></i> Delivery Time: 2-3 Days</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fa-solid fa-circle-check"></i> 1 Page Responsive Layout</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Clean & Modern Frontend Code</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Social Media Links</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom Pop-up Alert</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Source Code Included</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 1 Month Support</li>
+                    </ul>
+                    <a href="https://wa.me/923456727296?text=Hi%20Muhammad,%20I%20want%20to%20order%20the%20Basic%20Plan%20Single%20Page%20Web%20Design%20package." target="_blank" rel="noopener noreferrer" class="pricing-btn">Order Now</a>
+                </div>
+
+                <!-- Package 2: Standard (Featured) -->
+                <div class="pricing-card featured">
+                    <span class="popular-badge">Most Popular</span>
+                    <div class="package-header">
+                        <h3>Standard Plan</h3>
+                        <p class="package-subtitle">Dynamic Web App</p>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">$90</span>
+                            <span class="starting">Starting Price</span>
+                        </div>
+                    </div>
+                    <div class="package-meta">
+                        <span><i class="fa-regular fa-clock"></i> Delivery Time: 5-7 Days</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Up to 5 Responsive Pages</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Secure User Authentication</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Full PHP & MySQL Backend</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Dynamic Admin Panel</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Basic SEO Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 3 Months Maintenance</li>
+                    </ul>
+                    <a href="https://wa.me/923456727296?text=Hi%20Muhammad,%20I%20want%20to%20order%20the%20Standard%20Plan%20Dynamic%20PHP%20Website%20package." target="_blank" rel="noopener noreferrer" class="pricing-btn featured-btn">Order Now</a>
+                </div>
+
+                <!-- Package 3: Premium -->
+                <div class="pricing-card">
+                    <div class="package-header">
+                        <h3>Premium Plan</h3>
+                        <p class="package-subtitle">Custom E-Commerce Solution</p>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">$160</span>
+                            <span class="starting">Starting Price</span>
+                        </div>
+                    </div>
+                    <div class="package-meta">
+                        <span><i class="fa-regular fa-clock"></i> Delivery Time: 10-15 Days</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Up to 15+ Premium Pages</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom E-commerce Setup</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Payment Gateway Integration</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Database Security Features</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom Canva Graphics</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 6 Months Support</li>
+                    </ul>
+                    <a href="https://wa.me/923456727296?text=Hi%20Muhammad,%20I%20want%20to%20order%20the%20Premium%20Plan%20E-Commerce%20Web%20package." target="_blank" rel="noopener noreferrer" class="pricing-btn">Order Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
@@ -163,7 +271,7 @@
                         <div class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</div>
                         <div class="skill-tag"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design</div>
                         <div class="skill-tag"><i class="fa-solid fa-robot"></i> Prompt Engineering</div>
-                        <div class="skill-tag"><i class="fa-solid fa-pen-nib"></i> Canva Graphic Design</div>
+                        <div class="skill-tag"><i class="fa-solid fa-pen-nib"></i>Canva Graphics Design</div>
                     </div>
                 </div>
             </div>
@@ -204,7 +312,7 @@
                         <div class="project-tags">
                             <span>PHP</span>
                             <span>MySQL</span>
-                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
                             <span>Responsive</span>
                         </div>
                     </div>
@@ -217,7 +325,7 @@
                         <div class="project-tags">
                             <span>PHP</span>
                             <span>MySQL</span>
-                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
                             <span>Responsive</span>
                         </div>
                     </div>
@@ -236,19 +344,18 @@
                     </div>
                 </div>
                 <!-- Project 4 -->
-
-                <!-- <div class="project-card">
+                <div class="project-card">
                     <div class="project-info">
                         <h3>Zaiba Clothes (E-commerce UI)</h3>
                         <p class="project-desc">A clean frontend framework design for a modern clothing brand. Built with intuitive navigation, fluid product dynamic grids, and clean checkout views.</p>
                         <div class="project-tags">
                             <span>HTML5</span>
                             <span>CSS3</span>
-                            <span>Bootstrap</span>
-                            <span>Canva</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </section>
@@ -257,7 +364,6 @@
     <section id="contact" class="contact-section">
         <div class="container contact-container">
             <h2 class="contact-main-title">Get in touch</h2>
-            
             <div class="contact-grid">
                 <!-- Left Column -->
                 <div class="contact-info-panel">
