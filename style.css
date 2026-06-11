@@ -367,6 +367,162 @@ h1, h2, h3 {
     font-size: 0.95rem;
 }
 
+/* =========================================
+   PRICING PACKAGES SECTION STYLING (Newly Added)
+   ========================================= */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+    align-items: stretch;
+}
+
+.pricing-card {
+    background-color: var(--bg-secondary);
+    border: 1.5px solid var(--border-color);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+    transition: var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-secondary);
+    box-shadow: 0 10px 25px rgba(13, 242, 201, 0.05);
+}
+
+/* Featured / Popular plan glow matching screenshot style */
+.pricing-card.featured {
+    border-color: var(--accent-secondary);
+    box-shadow: 0 10px 30px rgba(13, 242, 201, 0.1);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--accent-secondary);
+    color: var(--bg-primary);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.package-header h3 {
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.package-subtitle {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+}
+
+.package-price {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-price .currency {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+}
+
+.package-price .amount {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    line-height: 1.1;
+}
+
+.package-price .starting {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.package-meta {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    margin-bottom: 25px;
+    display: inline-block;
+    align-self: center;
+}
+
+.package-meta i {
+    color: var(--accent-secondary);
+    margin-right: 5px;
+}
+
+.package-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 35px;
+    flex-grow: 1; /* Aligns order button vertically even with varying text lines */
+}
+
+.package-features li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.package-features li i {
+    color: var(--accent-secondary);
+    font-size: 1rem;
+}
+
+/* Order Button Styling matching theme constraints */
+.pricing-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    border: 2px solid var(--accent-primary);
+    color: var(--text-primary);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-speed);
+    text-align: center;
+}
+
+.pricing-btn:hover {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+/* Featured Button */
+.featured-btn {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
+}
+
+.featured-btn:hover {
+    background-color: transparent;
+    color: var(--text-primary);
+    border-color: var(--accent-secondary);
+}
+
 /* Skills Section */
 .skills-wrapper {
     max-width: 900px;
