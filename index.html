@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad | Full Stack Web Developer Portfolio</title>
+    
+    <!-- Basic SEO Meta Tags -->
+    <meta name="description" content="Muhammad – Full Stack Web Developer in Jhang, Pakistan. Specializing in PHP, MySQL, and responsive Bootstrap websites.">
+    <meta name="keywords" content="web developer pakistan, freelance developer jhang, PHP developer, portfolio, full stack developer jhang, web design pakistan, M_313Tech, custom web applications">
+    <meta name="author" content="Muhammad">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp Preview Meta Tags -->
+    <meta property="og:title" content="Muhammad | Full Stack Web Developer Portfolio">
+    <meta property="og:description" content="Full Stack Web Developer based in Jhang, Pakistan. Custom PHP, MySQL backend, and responsive Bootstrap layouts.">
+    <meta property="og:image" content="profile.jpg">
+    <meta property="og:url" content="https://muhammad313-dev.github.io/Personal-Portfolio-/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Muhammad | Web Developer Portfolio">
+    <meta name="twitter:description" content="Custom dynamic web development and responsive UI designs by Muhammad.">
+    <meta name="twitter:image" content="profile.jpg">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- YouTube Channel Pop-up Modal (Triggers automatically on load) -->
+    <div id="youtubeModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close-btn" id="closeModalBtn" aria-label="Close Pop-up">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="youtube-icon-header">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <h3 class="modal-heading">Subscribe to My YouTube Channel!</h3>
+            <p class="modal-text">
+                Muhammad Tech brings you the latest tech tutorials, web development guides, and coding tips! From HTML/CSS hacks to advanced backend solutions — stay updated, stay ahead. Subscribe for daily coding insights! 🚀
+            </p>
+            <a href="https://www.youtube.com/@M_313Tech" target="_blank" rel="noopener noreferrer" class="modal-cta-btn" id="visitChannelBtn">Visit Channel</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo">Muhammad<span class="dot">.</span></a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="nav-item active">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#services" class="nav-item">Services</a>
+                <a href="#pricing" class="nav-item">Pricing</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item contact-nav-btn">Contact</a>
+            </nav>
+
+            <div class="menu-btn" id="menuBtn">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section id="home" class="home-section">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <span class="subtitle">Welcome to my Portfolio</span>
+                <h1>Hi, I'm <span class="highlight">Muhammad</span></h1>
+                <h3>Full-Stack Developer & Prompt Engineer</h3>
+                <p>I build clean, professional, and scalable web solutions, helping clients transform ideas into production-ready platforms. Aspiring to lead my own software enterprise.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <!-- Download CV Button -->
+                    <a href="CV_Muhammad.pdf" download class="btn btn-secondary"><i class="fa-solid fa-download" style="margin-right: 8px;"></i>Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Is image file ka name profile.jpg hona chahiye -->
+                    <img src="profile1.png" alt="Muhammad">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section bg-alt">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text-full">
+                    <p>I am a computer science professional dedicated to constructing reliable, highly intuitive, and responsive web systems. My expertise bridges modern frontend aesthetics with structured backend architectures.</p>
+                    <p>With a core focus on scalability, clean coding standards, and fast load times, I translate business requirements into working digital products. Looking ahead, my mission is to establish a dedicated software agency that delivers software systems worldwide while maintaining standard quality standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">BSCS</div>
+                    <div class="timeline-content">
+                        <h3>BS Computer Science</h3>
+                        <p class="institution">Government College University Faisalabad</p>
+                        <p>Studied core computing methodologies, database designs, software architectural patterns, and full-stack development. Gained analytical skills through various development paradigms.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">FSc</div>
+                    <div class="timeline-content">
+                        <h3>FSc Pre-Engineering</h3>
+                        <p class="institution">Chenab College Jhang</p>
+                        <p>Developed a strong foundation in Mathematics, Physics, and logical problem-solving methods, which acts as a fundamental pillar for software engineering approaches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section bg-alt">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Creating dynamic, secure web platforms using PHP and MySQL. Writing clean backend code with optimized database queries.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Responsive Design</h3>
+                    <p>Building mobile-first layouts using CSS, Bootstrap, and vanilla JS that fit nicely on smartphones, tablets, and laptops.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Prompt Engineering</h3>
+                    <p>Structuring intelligent, precise system prompts to leverage Large Language Models (LLMs) to enhance dynamic automation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Canva Graphic Design</h3>
+                    <p>Designing modern branding collateral, visual layouts, and digital banners tailored specifically to modern aesthetics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Freelance Packages</h2>
+            <div class="pricing-grid">
+                
+                <!-- Package 1: Basic -->
+                <div class="pricing-card">
+                    <div class="package-header">
+                        <h3>Basic Plan</h3>
+                        <p class="package-subtitle">Single Page Design</p>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">15,000</span>
+                            <span class="starting">Starting Price</span>
+                        </div>
+                    </div>
+                    <div class="package-meta">
+                        <span><i class="fa-regular fa-clock"></i> Delivery Time: 2-3 Days</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fa-solid fa-circle-check"></i> 1 Page Responsive Layout</li>
+                        <li><i class="fa-solid fa-circle-check"></i> HTML5, CSS3 & Bootstrap</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Social Media Links</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom Pop-up Alert</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 1 Month Support</li>
+                    </ul>
+                    <a href="https://wa.me/923456727296?text=Hi%20Muhammad,%20I%20want%20to%20order%20the%20Basic%20Plan%20Single%20Page%20Web%20Design%20package." target="_blank" rel="noopener noreferrer" class="pricing-btn">Order Now</a>
+                </div>
+
+                <!-- Package 2: Standard (Featured) -->
+                <div class="pricing-card featured">
+                    <span class="popular-badge">Most Popular</span>
+                    <div class="package-header">
+                        <h3>Standard Plan</h3>
+                        <p class="package-subtitle">Dynamic Web App</p>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">35,000</span>
+                            <span class="starting">Starting Price</span>
+                        </div>
+                    </div>
+                    <div class="package-meta">
+                        <span><i class="fa-regular fa-clock"></i> Delivery Time: 5-7 Days</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Up to 5 Responsive Pages</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Full PHP & MySQL Backend</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Dynamic Admin Panel</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Basic SEO Optimization</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 3 Months Maintenance</li>
+                    </ul>
+                    <a href="https://wa.me/923456727296?text=Hi%20Muhammad,%20I%20want%20to%20order%20the%20Standard%20Plan%20Dynamic%20PHP%20Website%20package." target="_blank" rel="noopener noreferrer" class="pricing-btn featured-btn">Order Now</a>
+                </div>
+
+                <!-- Package 3: Premium -->
+                <div class="pricing-card">
+                    <div class="package-header">
+                        <h3>Premium Plan</h3>
+                        <p class="package-subtitle">Custom E-Commerce Solution</p>
+                        <div class="package-price">
+                            <span class="currency">Rs.</span>
+                            <span class="amount">70,000</span>
+                            <span class="starting">Starting Price</span>
+                        </div>
+                    </div>
+                    <div class="package-meta">
+                        <span><i class="fa-regular fa-clock"></i> Delivery Time: 10-15 Days</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><i class="fa-solid fa-circle-check"></i> Unlimited Dynamic Pages</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom E-commerce Setup</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Database Security Features</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Advanced SEO Integration</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Custom Canva Graphics</li>
+                        <li><i class="fa-solid fa-circle-check"></i> 6 Months Support</li>
+                    </ul>
+                    <a href="https://wa.me/923456727296?text=Hi%20Muhammad,%20I%20want%20to%20order%20the%20Premium%20Plan%20E-Commerce%20Web%20package." target="_blank" rel="noopener noreferrer" class="pricing-btn">Order Now</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-wrapper">
+                <div class="skill-category">
+                    <h3>Development & Design Stack</h3>
+                    <div class="skills-grid">
+                        <div class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</div>
+                        <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+                        <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+                        <div class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</div>
+                        <div class="skill-tag"><i class="fa-brands fa-php"></i> PHP</div>
+                        <div class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</div>
+                        <div class="skill-tag"><i class="fa-solid fa-mobile-screen-button"></i> Responsive Web Design</div>
+                        <div class="skill-tag"><i class="fa-solid fa-robot"></i> Prompt Engineering</div>
+                        <div class="skill-tag"><i class="fa-solid fa-pen-nib"></i> Canva Graphic Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="experience-timeline">
+                <div class="exp-card">
+                    <span class="exp-badge">Present</span>
+                    <h3>Freelance Full-Stack Developer</h3>
+                    <span class="exp-subtitle">Independent Contractor</span>
+                    <p>Design and deploy responsive web portals, custom applications, and clean database solutions. Manage clients from initial consultation, prompt analysis, to final deployment.</p>
+                </div>
+                <div class="exp-card">
+                    <span class="exp-badge">Startup Direction</span>
+                    <h3>Aspiring Business Owner</h3>
+                    <span class="exp-subtitle">Future Software House Strategy</span>
+                    <p>Continuously constructing and testing system architectures, refining business operations, and working to deliver enterprise-grade services to local and international clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Car Pooling System (FYP)</h3>
+                        <p class="project-desc">A web application built as a Final Year Project to solve travel challenges. It allows user authentication, path searches, matches drivers with riders, and estimates expenses.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Sultan Hope Foundation</h3>
+                        <p class="project-desc">A fully responsive, elegant portal created for a charity organization. This website serves to raise awareness, manage dynamic donation tracks, and register volunteers.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p class="project-desc">The modern, dynamic web design portfolio you are exploring. Crafted from scratch with optimal mobile responsiveness, custom UI styles, and clean scripts.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>Zaiba Clothes (E-commerce UI)</h3>
+                        <p class="project-desc">A clean frontend framework design for a modern clothing brand. Built with intuitive navigation, fluid product dynamic grids, and clean checkout views.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap</span>
+                            <span>Responsive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-container">
+            <span class="contact-label">07 — Contact</span>
+            <h2 class="contact-main-title">Get in touch</h2>
+            
+            <div class="contact-grid">
+                <!-- Left Column -->
+                <div class="contact-info-panel">
+                    <p class="contact-pitch">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+                    
+                    <div class="contact-item-pill">
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:hafizmohammad123.vu@gmail.com">hafizmohammad123.vu@gmail.com</a>
+                    </div>
+                    
+                    <div class="contact-plain-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+923456727296">+92 345 6727296</a>
+                    </div>
+                    
+                    <div class="contact-plain-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Jhang, Punjab, Pakistan</span>
+                    </div>
+                    
+                    <!-- Social icons row with your direct links -->
+                    <div class="social-circles">
+                        <a href="https://www.linkedin.com/in/muhammad313" target="_blank" rel="noopener noreferrer" class="circle-icon" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.github.com/muhammad313-dev" target="_blank" rel="noopener noreferrer" class="circle-icon" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1Fvav6yC1E/" target="_blank" rel="noopener noreferrer" class="circle-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@M_313Tech" target="_blank" rel="noopener noreferrer" class="circle-icon" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Column (Form Panel) -->
+                <div class="contact-form-panel">
+                    <!-- Note: Replace "YOUR_FORMSPREE_ID_HERE" with your actual formspree ID in the action attribute -->
+                    <form action="https://formspree.io/f/YOUR_FORMSPREE_ID_HERE" method="POST" id="contactForm" class="screenshot-form">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" name="name" id="form-name" placeholder="Your name" required class="form-control-custom">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" name="email" id="form-email" placeholder="your@email.com" required class="form-control-custom">
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea name="message" id="form-message" rows="5" placeholder="Your message" required class="form-control-custom"></textarea>
+                        </div>
+                        <button type="submit" class="gradient-submit-btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with Integrated Logos and Contact Links -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <a href="#home" class="logo" style="text-decoration: none;">Muhammad<span class="dot">.</span></a>
+                <p style="margin-top: 10px;">&copy; 2026 Muhammad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button id="backToTop" class="back-to-top-btn" title="Go to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
